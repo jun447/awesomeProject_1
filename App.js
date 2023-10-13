@@ -22,6 +22,9 @@ export default function App()  {
           <FlatCards/>
           <ElevationCards/>
           <FancyCard/>
+          <FancyCard/>
+          <FancyCard/>
+          <FancyCard/>
       </ScrollView>
     </SafeAreaView>  
   );
