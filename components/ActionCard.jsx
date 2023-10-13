@@ -33,8 +33,7 @@ const ActionCard = () => {
               <TouchableOpacity onPress={()=> openWebsite('https://www.google.com')}>
                 <Text style={styles.FtrText} >Read More</Text>
               </TouchableOpacity>
-         </View>
-         <View style={styles.FtrContainer} >
+         
               <TouchableOpacity onPress={()=> openWebsite('https://www.google.com')}>
                 <Text style={styles.FtrText} >Follow Me</Text>
               </TouchableOpacity>
@@ -54,7 +53,7 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     card:{
-        height: 350,
+        height: 400,
         width: 350,
         backgroundColor: '#fff',
         borderRadius: 10,
@@ -72,15 +71,65 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginHorizontal: 16,
         marginVertical: 12,
+        // borderColor: 'black',
+        // borderWidth: 3,
       },
-      img:{
+    img:{
         height: 180,
-        width: 260,
+        width: 340,
         borderRadius: 10,
         shadowColor: '#000',
         shadowOffset: {
           width: 0,
           height: 2,
         }
-      }
+      },
+    headContainer:{
+            // borderWidth: 1,
+            // borderColor: 'black',
+            paddingHorizontal: 8,
+            paddingVertical: 4,
+            marginBottom: 10,
+    },
+    headText:{
+            fontSize: 15,
+            fontWeight: 'bold',
+            
+    },
+    bdyContainer:{
+        // borderWidth: 1,
+        // borderColor: 'black',
+        marginBottom: 5,
+        marginVertical: 10,
+    },
+    FtrContainer:{
+        width: "90%",
+        // borderWidth: 1,
+        // borderColor: 'black',
+        // paddingHorizontal: 8,
+        // paddingVertical: 4,
+        padding: 10,
+
+        marginBottom: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        
+    },
+    FtrText:{
+        backgroundColor: '#4CAF50',
+        padding: 10,
+        borderRadius: 8,
+        fontWeight: 'bold',
+        color: '#fff',
+        letterSpacing: 1,
+        textTransform: 'uppercase',
+        shadowColor: '#000',
+        shadowOffset: {
+            height: 2,
+            width: 0,
+        },
+        shadowOpacity: 0.15,
+        shadowRadius: 2,
+        elevation: 5,
+    }
 })

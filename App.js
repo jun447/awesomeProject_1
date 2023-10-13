@@ -27,6 +27,7 @@ export default function App()  {
           <FancyCard/>
           <FancyCard/>
           <ActionCard/>
+          <ActionCard/>
       </ScrollView>
     </SafeAreaView>  
   );
