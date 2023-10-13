@@ -30,19 +30,12 @@ const ContactList = () => {
           phone: '1111111111',
           email: 'alicewilliams@gmail.com',
           imageUrl:'https://avatars.githubusercontent.com/u/72307789?s=400&v=4'
-        },
-        {
-          uid: 5,
-          name: 'Tom Davis',
-          phone: '2222222222',
-          email: 'tomdavis@gmail.com',
-          imageUrl:'https://avatars.githubusercontent.com/u/72307789?s=400&v=4'
-        },
+        }
       ];
   return (
     <View>
       <Text style={styles.headingText}  >ContactList</Text>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false} >
         {
           contacts.map((contact)=>{
             return(
@@ -50,7 +43,6 @@ const ContactList = () => {
                 <Image style={[styles.img, styles.rounded]} source={{uri: contact.imageUrl}} />
                 <View style={styles.headContainer}>
                   <Text style={styles.headText} >{contact.name}</Text>
-                  <Text style={styles.headText} >{contact.phone}</Text>
                   <Text style={styles.headText} >{contact.email}</Text>
                 </View>
               </View>
@@ -82,19 +74,20 @@ const styles = StyleSheet.create({
       margin: 10,
     },
     img: {
-      width: 50,
-      height: 50,
+      width: 60,
+      height: 60,
       marginRight: 10,
     },
     rounded: {
-      borderRadius: 25,
+      borderRadius: 60/2,
     },
     headContainer: {
       flex: 1,
     },
     headText: {
       fontSize: 18,
-      fontWeight: 'bold',
+    //   fontWeight: 'bold',
+    color: 'black',
       marginBottom: 5,
     },
     headingText: {
