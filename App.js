@@ -11,6 +11,7 @@ import FlatCards from './components/FlatCards';
 import ElevationCards from './components/ElevationCards';
 import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
+import ContactList from './components/ContactList';
 
 /**
  * The main component of the app.
@@ -28,6 +29,7 @@ export default function App()  {
           <FancyCard/>
           <ActionCard/>
           <ActionCard/>
+          <ContactList/>
       </ScrollView>
     </SafeAreaView>  
   );
