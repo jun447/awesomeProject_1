@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevationCards from './components/ElevationCards';
+import FancyCard from './components/FancyCard';
 
 /**
  * The main component of the app.
@@ -20,6 +21,7 @@ export default function App()  {
       <ScrollView>
           <FlatCards/>
           <ElevationCards/>
+          <FancyCard/>
       </ScrollView>
     </SafeAreaView>  
   );
