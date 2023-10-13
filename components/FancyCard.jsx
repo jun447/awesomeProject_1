@@ -4,7 +4,7 @@ import React from 'react'
 const FancyCard = () => {
   return (
     <View>
-      <Text style={styles.headingText}>Fancy Places</Text>
+      <Text style={styles.headingText}> Fancy Places</Text>
         <View style={[styles.card,styles.cardElevated]}>
             <Image
               source={{
@@ -24,6 +24,18 @@ const FancyCard = () => {
 
 export default FancyCard
 
+/**
+ * Styles for FancyCard component.
+ * @typedef {Object} FancyCardStyles
+ * @property {Object} cardBdy - Style object for card body.
+ * @property {Object} img - Style object for card image.
+ * @property {Object} card - Style object for card.
+ * @property {Object} cardLabel - Style object for card label.
+ * @property {Object} cardTitle - Style object for card title.
+ * @property {Object} cardFooter - Style object for card footer.
+ * @property {Object} cardElevated - Style object for elevated card.
+ * @property {Object} headingText - Style object for heading text.
+ */
 const styles = StyleSheet.create({
     cardBdy:{   
         // borderColor: 'black',

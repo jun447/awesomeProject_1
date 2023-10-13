@@ -3,13 +3,14 @@ import {
   SafeAreaView,
         ScrollView,
         StyleSheet, 
-        Text,
+        Txt,
         View,
-        useColorScheme
+        useColorSchemee
 } from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevationCards from './components/ElevationCards';
 import FancyCard from './components/FancyCard';
+import ActionCard from './components/ActionCard';
 
 /**
  * The main component of the app.
@@ -25,6 +26,7 @@ export default function App()  {
           <FancyCard/>
           <FancyCard/>
           <FancyCard/>
+          <ActionCard/>
       </ScrollView>
     </SafeAreaView>  
   );
