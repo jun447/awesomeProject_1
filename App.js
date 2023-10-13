@@ -8,6 +8,7 @@ import {
         useColorScheme
 } from 'react-native';
 import FlatCards from './components/FlatCards';
+import ElevationCards from './components/ElevationCards';
 
 /**
  * The main component of the app.
@@ -18,6 +19,7 @@ export default function App()  {
     <SafeAreaView>
       <ScrollView>
           <FlatCards/>
+          <ElevationCards/>
       </ScrollView>
     </SafeAreaView>  
   );

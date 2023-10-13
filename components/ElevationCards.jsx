@@ -1,12 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function FlatCards() {
+export default function ElevationCards() {
   return (
     <View>
-      <Text style={styles.headingText}>FlatCards</Text>
-      <View style={styles.container}>
-        <View style={[styles.card,styles.cardOne]}>
+      <Text style={styles.headingText}>ElevationCards</Text>
+      <ScrollView  
+              horizontal 
+              style={styles.container} 
+              showsHorizontalScrollIndicator={false}
+      >
+      <View style={[styles.card,styles.cardOne]}>
             <Text>RED</Text>
         </View>
         <View style={[styles.card,styles.cardTwo]}>
@@ -18,18 +22,19 @@ export default function FlatCards() {
         <View style={[styles.card,styles.cardThree]}>
             <Text>Blue</Text>
         </View>
-      </View>
+      </ScrollView>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
     container:{
-        flex: 1,
-        flexDirection: 'row',
+        // flex: 1,
+        // flexDirection: 'row',
         borderWidth: 1,
         borderColor: 'black',
         padding: 10,
+       
     },
     card:{
         height: 100,
@@ -63,8 +68,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'black',
         padding: 10,
-        margin: 10,
-        // borderWidth: 1,
-        // borderColor: 'black',
+        borderWidth: 1,
+        borderColor: 'black',
     }
 })
